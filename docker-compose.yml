@@ -50,7 +50,7 @@ services:
       - assets-vol:/assets:rw
 
   erpnext-python:
-    image: frappe/erpnext-worker:${ERPNEXT_VERSION}
+    build: ./build/erpnext-worker
     restart: on-failure
     environment:
       - MARIADB_HOST=${MARIADB_HOST}
