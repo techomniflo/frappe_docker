@@ -4,7 +4,7 @@ ARG IMAGE_TAG=develop
 
 FROM node:${NODE_IMAGE_TAG} as builder
 
-ARG GIT_REPO=https://github.com/frappe/erpnext
+ARG GIT_REPO=https://github.com/techomniflo/erpnext
 ARG GIT_BRANCH=develop
 
 ARG FRAPPE_BRANCH=${GIT_BRANCH}
